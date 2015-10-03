@@ -14,6 +14,8 @@ import android.widget.TextView;
 import com.github.android.research.R;
 import com.github.android.research.application.Constants;
 import com.github.android.research.application.ui.fragments.ResearchesFragment;
+import com.github.android.research.infrastructure.helper.SharedPreferencesHelper;
+import com.google.inject.Inject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,6 +41,10 @@ public class MainActivity extends BaseActivity {
 
     @InjectExtra(value = Constants.Extras.USERNAME, optional = false)
     String username;
+
+
+    @Inject
+    SharedPreferencesHelper sharedPreferencesHelper;
 
     List<Fragment> fragments;
 
@@ -133,6 +139,7 @@ public class MainActivity extends BaseActivity {
 
     @OnClick(R.id.nav_header_logout)
     public void logout() {
+        sharedPreferencesHelper.isNotLoggedIn();
         Intent intent = new Intent(MainActivity.this, LoginActivity.class);
         startActivity(intent);
         finish();

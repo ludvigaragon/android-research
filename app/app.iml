@@ -102,8 +102,8 @@
     <orderEntry type="library" exported="" name="bcprov-jdk15on-1.50" level="project" />
     <orderEntry type="library" exported="" name="support-v4-22.2.1" level="project" />
     <orderEntry type="library" exported="" name="commons-lang-2.4" level="project" />
-    <orderEntry type="library" exported="" name="okhttp-ws-2.5.0" level="project" />
     <orderEntry type="library" exported="" name="okio-1.6.0" level="project" />
+    <orderEntry type="library" exported="" name="okhttp-ws-2.5.0" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-22.2.1" level="project" />
     <orderEntry type="library" exported="" name="velocity-1.7" level="project" />
   </component>

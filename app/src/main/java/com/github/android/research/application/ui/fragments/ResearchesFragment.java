@@ -103,10 +103,10 @@ public class ResearchesFragment extends MainFragment implements ResearchRecycler
         });
     }
 
-    @OnClick(R.id.simulation_button_new)
-    public void performResearch() {
-
-    }
+//    @OnClick(R.id.simulation_button_new)
+//    public void performResearch() {
+//
+//    }
 
     public void setResearches(List<Research> researches) {
         this.researches = researches;

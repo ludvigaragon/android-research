@@ -65,6 +65,10 @@ public class SharedPreferencesHelper {
         return getString(TOKEN_PREF);
     }
 
+    public boolean isNotLoggedIn() {
+        return setToken(null) && setUsername(null);
+    }
+
     public boolean isLoggedIn() {
         return getToken() != null && getUsername() != null;
     }
