@@ -34,9 +34,9 @@ public class MockResponseFactory {
         researchResponse.code = "0000";
         researchResponse.message = "Sucesso";
         researchResponse.researches = new ArrayList<>();
-        researchResponse.researches.add(new Research(1, "Aprovação do governo Dilma", "Encomendada pelo governo federal para ter uma ideia mais clara da opinião pública"));
-        researchResponse.researches.add(new Research(2, "Mulheres no mercado de trabalho", "Encomendada pelo grupo feminista da UERJ pra arrumar tumulto nas ruas"));
-        researchResponse.researches.add(new Research(3, "Estatuto da família", "Encomendada pelo pastor Marco Feliciano pra incomodar as bancada LGBT"));
+        researchResponse.researches.add(new Research(1, "Android ou Iphone", "Duas grandes potencias, dois públicos alvos distintos, em qual voce se encaixa?"));
+        researchResponse.researches.add(new Research(2, "Windows ou Linux", "Microsoft a maior potência de Sistemas Operacionais do mundo, estaria ameaçado de perder seu reinado para o Linux?"));
+        researchResponse.researches.add(new Research(3, "PhotoShop ou Corel PhotoPaint", "Dois softwares que prometem realizar fantasticas edições em imagens com ferramentas incríveis"));
         return gson.toJson(researchResponse);
     }
 

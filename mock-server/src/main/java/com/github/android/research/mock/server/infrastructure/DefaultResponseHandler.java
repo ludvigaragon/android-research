@@ -19,7 +19,7 @@ public class DefaultResponseHandler implements MockResponseHandler {
         try {
             if (path.contains("/user/auth/")) {
 
-                if (path.contains("rodrigo/1234")) {
+                if (path.toUpperCase().contains("ADMIN/") && path.contains("/admin2")) {
                     responseBody = mockResponseFactory.loginSuccess();
                     MockResponse mockResponse = new MockResponse().setResponseCode(responseCode).setBody(responseBody);
                     mockResponse.addHeader("token", "ASDH3-23R3ER-WEFWQEFE-EFW");
